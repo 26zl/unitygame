@@ -15,6 +15,12 @@ public class PlayerController : MonoBehaviour
     public float lookSpeed = 2.0f;
     public float lookXLimit = 80.0f; // Limit for looking up and down
 
+        // Add these at the top with your other public variables
+    [Header("Shooting")]
+    public GameObject bulletPrefab; // The bullet object we created
+    public Transform shootPoint;    // The "barrel" of our gun
+    public float bulletSpeed = 30f; // How fast the bullet travels
+
     // --- Private variables (for internal script use) ---
 
     private Rigidbody rb;
@@ -64,6 +70,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnAttack(InputValue value)
+{
+    // We only want to fire on the initial press
+    if (value.isPressed)
+    {
+        Shoot();
+    }
+}
+
     // --- Update and FixedUpdate ---
 
     // FixedUpdate is called at a fixed interval and is used for physics calculations.
@@ -111,4 +126,18 @@ public class PlayerController : MonoBehaviour
         // When we stop touching anything, we are no longer grounded
         isGrounded = false;
     }
+
+    void Shoot()
+{
+    // 1. Create a new bullet instance from the prefab at the shootPoint's position and rotation.
+    GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+
+    // 2. Get the Rigidbody component from the newly created bullet.
+    Rigidbody bulletRb = bullet.GetComponent<Rigidbody>();
+
+    // 3. Add a forward force to the bullet.
+    // We use shootPoint.forward to get the direction the camera is facing.
+    // ForceMode.Impulse applies the force instantly.
+    bulletRb.AddForce(shootPoint.forward * bulletSpeed, ForceMode.Impulse);
+}
 }
