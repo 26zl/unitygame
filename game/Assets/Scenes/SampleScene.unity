@@ -675,6 +675,109 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1256977760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      propertyPath: m_Name
+      value: Make_a_skinny_man_wit_0611152918_texture
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1448038083}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1448038085}
+  m_SourcePrefab: {fileID: 100100000, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+--- !u!1 &1448038082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4c2b8543cf2644d96bccfbd5adb98f53, type: 3}
+  m_PrefabInstance: {fileID: 1256977760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1448038083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448038082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27227dd0c64e43aab79474b7930e365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  luaScriptFile: npc_logic.lua
+--- !u!95 &1448038085
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448038082}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2c61b0aa7adb74cd88f7c843ee35b0fd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1858382067
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,3 +1100,4 @@ SceneRoots:
   - {fileID: 1952250489}
   - {fileID: 990366193}
   - {fileID: 1858382074}
+  - {fileID: 1256977760}
